@@ -37,6 +37,7 @@ namespace objects {
   
       public Update(): void {
           this.x = managers.Game.Stage.mouseX;
+          this.Move();
           this._checkBounds();
       }
   
@@ -44,13 +45,14 @@ namespace objects {
 
       public Move():void
       {
+          console.log("hey - this is working");
         if (managers.Game.keyboardManager.jump)
         {
-            this.y= 270;
+            this.y= 130;
         }
         else 
         {
-            this.y = 370;
+            this.y = 230;
         }
       }
     }

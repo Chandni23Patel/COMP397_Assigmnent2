@@ -48,6 +48,7 @@ module scenes {
             if(managers.Collision.check(this._snowman, this._reindeer))
             {
                 console.log("collision-reindeer");
+                this.removeChild(this._reindeer);
             }
             
         }

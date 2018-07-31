@@ -41,15 +41,17 @@ var objects;
         };
         Snowman.prototype.Update = function () {
             this.x = managers.Game.Stage.mouseX;
+            this.Move();
             this._checkBounds();
         };
         Snowman.prototype.Reset = function () { };
         Snowman.prototype.Move = function () {
+            console.log("hey - this is working");
             if (managers.Game.keyboardManager.jump) {
-                this.y = 270;
+                this.y = 130;
             }
             else {
-                this.y = 370;
+                this.y = 230;
             }
         };
         return Snowman;

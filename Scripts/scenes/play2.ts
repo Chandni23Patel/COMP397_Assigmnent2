@@ -7,7 +7,7 @@ module scenes {
         private _ocean:objects.Ocean;
         private _dog:objects.Dog;
         private _reindeer:objects.Reindeer;
-        private _fishNum:number;
+       
         
         public engineSound:createjs.AbstractSoundInstance;
 
@@ -21,15 +21,10 @@ module scenes {
         // public methods
         public Start():void
         {
-            //this.engineSound = createjs.Sound.play("background");
-            //this.engineSound.loop = -1;
-            //this.engineSound.volume = 0.1;
-
             this._snowman = new objects.Snowman();
             this._ocean = new objects.Ocean();
             this._dog = new objects.Dog();
             this._reindeer = new objects.Reindeer();
-           
             this.Main();
         }
 

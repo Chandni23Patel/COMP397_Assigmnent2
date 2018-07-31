@@ -33,6 +33,7 @@ namespace objects {
       public Update(): void {
         this.x -= this._horizontalSpeed;
         this._checkBounds();
+        
       }
   
       public Reset(): void {

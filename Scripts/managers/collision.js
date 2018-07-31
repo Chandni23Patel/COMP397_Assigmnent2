@@ -11,15 +11,8 @@ var managers;
                     object2.isColliding = true;
                     switch (object2.name) {
                         case "dog":
-                            //let yaySound = createjs.Sound.play("die");
-                            //yaySound.volume = 0.2;
                             managers.Game.ScoreBoard.NoOfDog += 1;
                             managers.Game.ScoreBoard.Score += 50;
-                            break;
-                        case "red_fish":
-                            //let thunderSound = createjs.Sound.play("thunder");
-                            //thunderSound.volume = 0.2;
-                            managers.Game.ScoreBoard.Score += 100;
                             break;
                         case "reindeer":
                             managers.Game.ScoreBoard.Score += 75;

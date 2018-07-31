@@ -1,5 +1,5 @@
 module scenes {
-    export class Play2 extends objects.Scene 
+    export class Level extends objects.Scene 
     {
         // member variables
     

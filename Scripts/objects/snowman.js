@@ -41,7 +41,7 @@ var objects;
         };
         Snowman.prototype.Update = function () {
             this.x = managers.Game.Stage.mouseX;
-            this.Move();
+            //this.Move();
             this._checkBounds();
         };
         Snowman.prototype.Reset = function () { };

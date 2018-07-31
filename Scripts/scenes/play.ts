@@ -5,9 +5,8 @@ module scenes {
     
         private _snowman:objects.Snowman;
         private _ocean:objects.Ocean;
-        private _dog:objects.Dog;
         private _reindeer:objects.Reindeer;
-        private _fishNum:number;
+        private _dog1:objects.Dog;
         
         public engineSound:createjs.AbstractSoundInstance;
 
@@ -27,7 +26,7 @@ module scenes {
 
             this._snowman = new objects.Snowman();
             this._ocean = new objects.Ocean();
-            this._dog = new objects.Dog();
+            this._dog1 = new objects.Dog();
             this._reindeer = new objects.Reindeer();
            
             this.Main();
@@ -37,10 +36,10 @@ module scenes {
             
             this._snowman.Update();
             this._ocean.Update();
-            this._dog.Update();
+            this._dog1.Update();
             this._reindeer.Update();
-
-            if(managers.Collision.check(this._snowman, this._dog))
+           
+            if(managers.Collision.check(this._snowman,this._dog1))
             {
                 console.log("collision-dog");
             }
@@ -48,7 +47,6 @@ module scenes {
             if(managers.Collision.check(this._snowman, this._reindeer))
             {
                 console.log("collision-reindeer");
-                this.removeChild(this._reindeer);
             }
             
         }
@@ -71,14 +69,15 @@ module scenes {
             this.addChild(this._snowman);
 
             // adding the dog to the scene
-            this.addChild(this._dog);
+            //this.addChild(this._dog);
+            this.addChild(this._dog1);
 
             this.addChild(this._reindeer);
 
             // adding label to keep track of score
             //this.addChild(managers.Game.ScoreBoard.LivesLabel);
             this.addChild(managers.Game.ScoreBoard.ScoreLabel);
-            this.addChild(managers.Game.ScoreBoard.DogLabel);
+            //this.addChild(managers.Game.ScoreBoard.DogLabel);
             this.addChild(managers.Game.ScoreBoard.ReindeerLabel);
         }
     }

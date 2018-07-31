@@ -10,23 +10,23 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var scenes;
 (function (scenes) {
-    var Play2 = /** @class */ (function (_super) {
-        __extends(Play2, _super);
+    var Level = /** @class */ (function (_super) {
+        __extends(Level, _super);
         // constructors
-        function Play2() {
+        function Level() {
             var _this = _super.call(this) || this;
             _this.Start();
             return _this;
         }
         // public methods
-        Play2.prototype.Start = function () {
+        Level.prototype.Start = function () {
             this._snowman = new objects.Snowman();
             this._ocean = new objects.Ocean();
             this._dog = new objects.Dog();
             this._reindeer = new objects.Reindeer();
             this.Main();
         };
-        Play2.prototype.Update = function () {
+        Level.prototype.Update = function () {
             this._snowman.Update();
             this._ocean.Update();
             this._dog.Update();
@@ -38,12 +38,12 @@ var scenes;
                 console.log("collision-reindeer");
             }
         };
-        Play2.prototype.Reset = function () {
+        Level.prototype.Reset = function () {
         };
-        Play2.prototype.Destroy = function () {
+        Level.prototype.Destroy = function () {
             this.removeAllChildren();
         };
-        Play2.prototype.Main = function () {
+        Level.prototype.Main = function () {
             console.log("Starting - PLAY2 SCENE");
             // adding the background to the scene
             this.addChild(this._ocean);
@@ -58,8 +58,8 @@ var scenes;
             this.addChild(managers.Game.ScoreBoard.DogLabel);
             this.addChild(managers.Game.ScoreBoard.ReindeerLabel);
         };
-        return Play2;
+        return Level;
     }(objects.Scene));
-    scenes.Play2 = Play2;
+    scenes.Level = Level;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=play2.js.map
+//# sourceMappingURL=level.js.map

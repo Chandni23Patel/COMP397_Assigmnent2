@@ -2,7 +2,7 @@ module config {
     export enum Scene {
         START,
         PLAY,
-        PLAY2,
+        LEVEL,
         END,
         SETTING,
         INFORMATION

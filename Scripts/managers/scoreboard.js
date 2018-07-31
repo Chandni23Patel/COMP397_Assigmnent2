@@ -106,7 +106,7 @@ var managers;
             set: function (newValue) {
                 this._noOfReindeer = newValue;
                 if (this._noOfReindeer == 30) {
-                    managers.Game.CurrentState = config.Scene.PLAY2;
+                    managers.Game.CurrentState = config.Scene.LEVEL;
                 }
                 else {
                     this.ReindeerLabel.text = "Reindeer: " + this._noOfReindeer;

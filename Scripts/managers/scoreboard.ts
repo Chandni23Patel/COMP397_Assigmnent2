@@ -96,9 +96,9 @@ module managers {
         set NoOfReindeer(newValue:number) {
             this._noOfReindeer = newValue;
             if(this._noOfReindeer == 30) {
-                managers.Game.CurrentState = config.Scene.PLAY2;
+                managers.Game.CurrentState = config.Scene.LEVEL;
             }
-            else{
+            else {
             this.ReindeerLabel.text = "Reindeer: " + this._noOfReindeer;
             }
         }

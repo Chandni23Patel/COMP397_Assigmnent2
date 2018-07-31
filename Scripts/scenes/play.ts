@@ -70,7 +70,7 @@ module scenes {
 
             // adding the dog to the scene
             //this.addChild(this._dog);
-            this.addChild(this._dog1);
+            //this.addChild(this._dog1);
 
             this.addChild(this._reindeer);
 

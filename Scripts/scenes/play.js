@@ -54,7 +54,7 @@ var scenes;
             this.addChild(this._snowman);
             // adding the dog to the scene
             //this.addChild(this._dog);
-            this.addChild(this._dog1);
+            //this.addChild(this._dog1);
             this.addChild(this._reindeer);
             // adding label to keep track of score
             //this.addChild(managers.Game.ScoreBoard.LivesLabel);

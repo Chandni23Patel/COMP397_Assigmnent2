@@ -70,8 +70,8 @@
             case config.Scene.END:
                 CurrentScene = new scenes.End();
                 break;
-            case config.Scene.PLAY2:
-                CurrentScene = new scenes.Play2();
+            case config.Scene.LEVEL:
+                CurrentScene = new scenes.Level();
                 break;
             case config.Scene.SETTING:
                 CurrentScene = new scenes.Setting();

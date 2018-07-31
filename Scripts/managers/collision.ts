@@ -19,6 +19,7 @@ namespace managers {
                 case "reindeer":
                 managers.Game.ScoreBoard.Score += 75; 
                 managers.Game.ScoreBoard.NoOfReindeer +=1;
+                
                 break;
             }
         }
